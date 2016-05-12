@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://wange.im/demo/marquee-slide/marquee_slide.html -->
+<html lang="zh-CN">
+<script id="tinyhippos-injected">if (window.top.ripple) {
+    window.top.ripple("bootstrap").inject(window, document);
+}</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/marquee.js"></script>
+    <style type="text/css">
+        * {margin:0;padding:0;}
+        body{font:60em SimSun,Arial,Helvetica,sans-serif;color:darkred;}
+        strong{font-weight:700;}
+        :focus{outline:0;}
+        #mod_header,#mod_main,#mod_footer{width:960px;margin:20px auto;}
+        #mod_footer{margin:0 auto;padding-bottom:20px;font-family:Arial;}
+        #mod_header h1{font:60em; 22px/2 'Microsoft YaHei';text-align:center;}
+        #desc pre{font:13px/15px 'Lucida Console',Arial;color:#7F9F7F;}
+        .mod{border-bottom:5px dashed #f00;margin-bottom:10px;padding-bottom:10px;}
+        .mod_hd{}
+        .mod_hd h2{margin-bottom:10px;padding:0 20px;font:700 16px/2 'Microsoft YaHei',SimSun;color:#fff;background:#104778;text-shadow:1px 1px 1px #8DB2E3;}
+        .mod_bd{}
+        .mod_ft strong{display:block;margin-bottom:5px;}
+        .mod_ft ul{margin-bottom:10px;}
+        .mod_ft li{list-style:disc inside none;line-height:20px;}
+        .demo,.code{margin-bottom:10px;}
+        .code textarea{margin:0;border:0 none;padding:0;width:100%;height:150px;font:12px/1.4 'Lucida Console',Arial;background:#ddd;resize:none;}
+        .to_top{text-align:right;}
+        .to_top a{text-decoration:none;}
+        #mod_footer{text-align:center;}
+
+        .wrap,.box{margin-bottom:10px;}
+        .wrap ul,.wrap .ul{overflow:hidden;clear:both;*zoom:1;}
+
+        .wrap li, .wrap .li {
+            list-style: none;
+            width: 960px;
+            height: 640px;
+            padding: 5px;
+            background: #fff;
+            margin: 2px 5px 10px 5px;
+            font-size: 200px;
+            text-align: center;
+        }
+
+        .image1 {
+            background-image: url("test.jpg");
+            background-color: #cccccc;
+        }
+    </style>
+
+    <title>你没有锁屏</title>
+
+</head>
+<body>
+
+<div id="mod_main">
+    <div id="module_a" class="mod">
+        <div class="mod_bd">
+            <div class="demo">
+                <div id="wrap1" class="wrap" style="position: relative; width: 960px; height: 640px; overflow: hidden;">
+                    <ul style="position: relative; width: 9999px; height: auto; left: 0px;">
+
+                        <li style="background-image: url('1.jpg'); float: left;">锁屏</li>
+                        <li style="background-image: url('2.jpg'); float: left;">没有锁屏</li>
+                        <li style="background-image: url('3.jpg'); float: left;">你没有锁屏</li>
+                        <li style="background-image: url('4.jpg'); float: left;">你真的没有锁屏</li>
+                        <li style="background-image: url('5.jpeg'); float: left;">你真的又没有锁屏</li>
+                        <li style="background-image: url('6.jpg'); float: left;">你是真的又没有锁屏</li>
+                        <li style="background-image: url('7.jpg'); float: left;">锁屏</li>
+                        <li style="background-image: url('8.jpeg'); float: left;">记得锁屏</li>
+                        <li style="background-image: url('9.jpg'); float: left;">记得锁屏锁屏锁屏锁屏锁屏</li>
+                    </ul>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#wrap1').marquee();
+                    })
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
