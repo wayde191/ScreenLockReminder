@@ -1,0 +1,11 @@
+1: Create a cron file named task.cron
+*/1 * * * * /usr/bin/open -a "/Applications/Google Chrome.app" 'http://www.ihakula.com:9000/ScreenLockReminder/'
+
+2: Create a shell file named task.sh and put it in the same folder with task.cron
+/usr/bin/open -a "/Applications/Google Chrome.app" 'http://www.ihakula.com:9000/ScreenLockReminder/'
+
+3: crontab task.cron
+
+4: crontab -l / or -e to check
+
+5: crontab -r to remove
